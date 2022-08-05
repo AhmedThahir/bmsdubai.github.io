@@ -6,10 +6,13 @@ block content
 		)
 		div
 			h1 This is<br/>Al Fursan.
-			a.alFursanBtn.btn(href="#aboutUs") Learn More
-		img#heroImg.eager.logo(src="../assets/logo/AlFursanLogoBlackTransparent.png")
-	section(bg="group.jpg")#aboutUs.content
-		h1.red Who are we?
+			a#hero_link.btn(href="#aboutUs") 
+				.scroll-down
+			//-Learn More
+		img#heroImg.eager.logo(
+			src="../assets/logo/AlFursanLogoBlackTransparent.png")
+	section(bg="team.jpg", style="background-position: top")#aboutUs.content
+		h1 Who are we?
 		.banners
 			div
 				img(data="icon/team.png")
@@ -19,7 +22,12 @@ block content
 				p Part of <b>Society of Automotive Engineers</b> ecosystem
 			div
 				img(data="icon/topRated.png")
-				p Participated in various <b>Formula Student</b> competitions
+				p <b>Placed 3rd</b> in
+					br
+					span FS Netherlands
+					br
+					span Business Plan Pitch
+				//- Participated in various <b>Formula Student</b> competitions
 	//- section(bg="working.jpg" style="background-position: top")#goals.content
 		h1.red Our Goals
 		p Our brand new team, with members from various fields are working toward the following goals:
@@ -32,7 +40,7 @@ block content
 		div
 			h1 Title Sponsor
 			a.mahy_khooryBtn.btn(href="https://mahykhoory.com/", target="_blank") Website
-		img.logo(data="logo/khoory.svg")
+		img.logo(data="logo/khoory_light.svg")
 
 	section(bg="titan_parking.jpg")#titan.cover
 		div

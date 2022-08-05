@@ -14,16 +14,17 @@ thahirLinks.forEach(link => {
 	})
 	
 });
-// var nav = document.getElementById("nav");
-// window.onscroll = function() {
-// 	stickyNav();
-// };
 
-// function stickyNav() {
-// 	const threshold = 0.9 * window.innerHeight
-// 	if (window.scrollY >= threshold) {
-// 		nav.classList.add("sticky")
-// 	} else {
-// 		nav.classList.remove("sticky");
-// 	}
-// }
+var nav = document.getElementById("nav");
+window.onscroll = function() {
+	stickyNav();
+};
+
+function stickyNav() {
+	const threshold = 0.7 * window.innerHeight
+	if (window.scrollY >= threshold) {
+		nav.classList.add("sticky")
+	} else {
+		nav.classList.remove("sticky");
+	}
+}

@@ -17,7 +17,7 @@ const assetObserver = new IntersectionObserver((entries, assetObserver) => {
 		const asset = <HTMLMediaElement> entry.target
 		const data = asset.getAttribute("data")
 		
-		if(data.includes("svg"))
+		if(data!=null && data.includes("svg"))
 			asset.classList.add("sharp")
 		asset.src = assetLoc + data
 		assetObserver.unobserve(entry.target)
