@@ -6,8 +6,13 @@ const scripts = [
 
 function loadScript(name:string){
 	const script = <HTMLScriptElement> document.createElement("script");
+	
 	script.type = 'text/javascript';
 	script.src = '../js/' + name + '.js';
+	
+	script.async= false;
+	script.defer= true;
+	
 	document.body.appendChild(script);
 }
 
