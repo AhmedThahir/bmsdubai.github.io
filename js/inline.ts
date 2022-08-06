@@ -16,8 +16,7 @@ function loadStyle(name){
 	document.head.append(style);
 }
 
-// purposely put this here, so that the animation is a little delayed
-
+// purposely put this eager code here, so that the animation is a little delayed
 window.addEventListener("load", function(){
 	const eager = document.querySelectorAll(".eager")
 	if(eager!=null)
