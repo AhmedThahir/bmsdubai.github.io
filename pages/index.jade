@@ -1,5 +1,8 @@
 extends _layout.jade
 
+block head
+	link(rel="preload", as="image", href="../assets/bg/hero.jpg", fetchpriority="high")
+
 block content
 	section#hero.cover(
 			style = 'background-image: linear-gradient( hsla(0, 0%, 0%, 0.75) 0%, hsla(0, 0%, 0%, 0.75) 85%, black 100% ) , url("../assets/bg/hero.jpg")'
@@ -10,7 +13,8 @@ block content
 				.scroll-down
 			//-Learn More
 		img#heroImg.logo(
-			data="logo/AlFursanLogoBlackTransparent.png"
+			data="logo/AlFursanLogoBlackTransparent.png",
+			fetchpriority="high"
 			)
 	section(bg="team.jpg", style="background-position: top")#aboutUs.content
 		h1 Who are we?
